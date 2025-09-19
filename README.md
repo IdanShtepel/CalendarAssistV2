@@ -189,23 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **SwiftUI** for the modern UI framework
 - **AppAuth** for OAuth authentication
 
-## 📞 Support
 
-If you encounter any issues or have questions:
-
-1. **Check the Issues** tab for existing solutions
-2. **Create a new issue** with detailed information
-3. **Contact the maintainer** at [your-email@example.com]
-
-## 🔮 Roadmap
-
-- [ ] **Apple Calendar Integration**
-- [ ] **Event Templates**
-- [ ] **Recurring Events**
-- [ ] **Team Collaboration**
-- [ ] **Widget Support**
-- [ ] **Siri Shortcuts**
-- [ ] **Apple Watch App**
 
 ---
 
