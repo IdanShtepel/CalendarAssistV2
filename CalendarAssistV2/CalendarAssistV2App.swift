@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 @main
 struct CalendarAssistV2App: App {
+    @StateObject private var googleCalendarService = GoogleCalendarService.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    googleCalendarService.configure()
+                }
+                .onOpenURL { url in
+                    _ = googleCalendarService.handleSignInURL(url)
+                }
         }
     }
 }

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		86E48A312E4E6D800028E112 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 86E48A302E4E6D800028E112 /* GoogleSignIn */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		86158B2D2E4D7F4900D5B9CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		86158B362E4D7F4900D5B9CA /* CalendarAssistV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarAssistV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		86E48C6B2E4E7F460028E112 /* Exceptions for "CalendarAssistV2" folder in "CalendarAssistV2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 86158B1D2E4D7F4700D5B9CA /* CalendarAssistV2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		86158B202E4D7F4700D5B9CA /* CalendarAssistV2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				86E48C6B2E4E7F460028E112 /* Exceptions for "CalendarAssistV2" folder in "CalendarAssistV2" target */,
+			);
 			path = CalendarAssistV2;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E48A312E4E6D800028E112 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				86158B202E4D7F4700D5B9CA /* CalendarAssistV2 */,
 				86158B2F2E4D7F4900D5B9CA /* CalendarAssistV2Tests */,
 				86158B392E4D7F4900D5B9CA /* CalendarAssistV2UITests */,
+				86E48A2F2E4E6D800028E112 /* Frameworks */,
 				86158B1F2E4D7F4700D5B9CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				86158B362E4D7F4900D5B9CA /* CalendarAssistV2UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		86E48A2F2E4E6D800028E112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = CalendarAssistV2;
 			packageProductDependencies = (
+				86E48A302E4E6D800028E112 /* GoogleSignIn */,
 			);
 			productName = CalendarAssistV2;
 			productReference = 86158B1E2E4D7F4700D5B9CA /* CalendarAssistV2.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = 86158B152E4D7F4700D5B9CA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				86E48A2E2E4E6A8D0028E112 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 86158B1F2E4D7F4700D5B9CA /* Products */;
 			projectDirPath = "";
@@ -391,8 +421,10 @@
 				CODE_SIGN_ENTITLEMENTS = CalendarAssistV2/CalendarAssistV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3YU9ZYXC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalendarAssistV2/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -428,8 +460,10 @@
 				CODE_SIGN_ENTITLEMENTS = CalendarAssistV2/CalendarAssistV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3YU9ZYXC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalendarAssistV2/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -583,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86E48A2E2E4E6A8D0028E112 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86E48A302E4E6D800028E112 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86E48A2E2E4E6A8D0028E112 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86158B162E4D7F4700D5B9CA /* Project object */;
 }
