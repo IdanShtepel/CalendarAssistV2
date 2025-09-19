@@ -188,11 +188,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **OpenRouter** for premium AI model access
 - **SwiftUI** for the modern UI framework
 - **AppAuth** for OAuth authentication
+- **ClaudeCode** for the coding
 
 
 
 ---
 
-**Made with ❤️ for better time management**
+**Made with ❤️ (and ClaudeCode) for better time management**
 
 *CalendarAssistV2 - Your intelligent calendar companion*
